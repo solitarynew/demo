@@ -19,7 +19,7 @@ public class StarWarsSchema {
         return RuntimeWiring.newRuntimeWiring()
 
                 // this uses builder function lambda syntax
-                .type("QueryType", typeWiring -> typeWiring
+                .type("Query", typeWiring -> typeWiring
                         .dataFetcher("hero", new StaticDataFetcher(StarWarsData.getArtoo()))
                         .dataFetcher("human", StarWarsData.getHumanDataFetcher())
                         .dataFetcher("droid", StarWarsData.getDroidDataFetcher())
