@@ -1,4 +1,4 @@
-package org.example;
+package org.example.java;
 
 import graphql.ExecutionResult;
 import graphql.GraphQL;
