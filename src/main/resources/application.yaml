@@ -1,0 +1,17 @@
+org :
+  neo4j :
+    driver :
+      uri : bolt://localhost:7687
+      authentication :
+        username : neo4j
+        password : test
+      config :
+        encrypted : false
+database : neo4j
+spring :
+  graphql :
+    schema :
+      printer :
+        enabled : true
+    graphiql :
+      enabled : true
